@@ -6,6 +6,8 @@
     <title>Your Name - Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
@@ -14,7 +16,7 @@
             <div class="logo">
                 <h1>Your Name</h1>
             </div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -23,50 +25,90 @@
         </nav>
     </header>
 
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h2>Welcome to My World</h2>
+            <h1>I'm <span class="highlight">[Your Name]</span></h1>
+            <p>A Node.js and WhatsApp bot developer, actively learning C++, JavaScript, HTML, and CSS.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <div class="home-img">
+            <img src="images/home.svg" alt="Home Image">
+        </div>
+    </section>
+
     <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Hi, I'm [Your Name], a Node.js and WhatsApp bot developer. I specialize in building interactive chatbots and web applications. Currently, I'm actively learning C++, JavaScript, HTML, and CSS. I'm passionate about creating solutions that improve user experience and automate tasks.</p>
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm [Your Name], a passionate developer who loves creating innovative solutions with Node.js and building interactive chatbots. I'm continuously learning new skills and technologies to expand my expertise.</p>
+        </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Node.js</li>
-            <li>WhatsApp Bot Development</li>
-            <li>JavaScript</li>
-            <li>HTML & CSS</li>
-            <li>C++</li>
-        </ul>
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <i class='bx bxl-nodejs'></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-box">
+                    <i class='bx bx-message-square-dots'></i>
+                    <h3>WhatsApp Bot Development</h3>
+                </div>
+                <div class="skill-box">
+                    <i class='bx bxl-javascript'></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-box">
+                    <i class='bx bxl-html5'></i>
+                    <h3>HTML & CSS</h3>
+                </div>
+                <div class="skill-box">
+                    <i class='bx bxl-c-plus-plus'></i>
+                    <h3>C++</h3>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <h3>WhatsApp Bot</h3>
-                <p>A WhatsApp bot that automates various tasks.</p>
-                <a href="https://github.com/YourGithubProfile/WhatsApp-Bot" target="_blank">View Project</a>
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>WhatsApp Bot</h3>
+                    <p>A bot that automates various tasks on WhatsApp using Node.js.</p>
+                    <a href="https://github.com/YourGithubProfile/WhatsApp-Bot" target="_blank" class="btn">View Project</a>
+                </div>
             </div>
-            <div class="project">
-                <h3>Portfolio Website</h3>
-                <p>A personal portfolio website showcasing my skills and projects.</p>
-                <a href="https://github.com/YourGithubProfile/Portfolio-Website" target="_blank">View Project</a>
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website showcasing my skills and projects.</p>
+                    <a href="https://github.com/YourGithubProfile/Portfolio-Website" target="_blank" class="btn">View Project</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <p>If you'd like to connect, feel free to reach out on my social profiles below!</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/YourInstagramProfile" target="_blank"><i class='bx bxl-instagram'></i></a>
-            <a href="https://wa.me/YourWhatsAppNumber" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-            <a href="https://github.com/YourGithubProfile" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/YourLinkedInProfile" target="_blank"><i class='bx bxl-linkedin'></i></a>
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to connect, feel free to reach out on my social profiles below!</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/YourInstagramProfile" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.me/YourWhatsAppNumber" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://github.com/YourGithubProfile" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/YourLinkedInProfile" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
         </div>
     </section>
 
